@@ -31,7 +31,7 @@ app.post("/",function(req,res){
     const url = "https://us21.api.mailchimp.com/3.0/lists/a9dc1dc26f";
     const options = { 
         method:"POST",
-        auth:"sachin:a34678522c1472d0ac484daeb078bcbb-us21",
+        auth:"sachin:94798f4e558ed6393f17876080c98ed3-us21",
     };
 
     const request = https.request(url,options,function(response){
@@ -51,9 +51,9 @@ app.post("/failure",function(req,res){
     res.redirect("/");
 })
 //API key
-//a34678522c1472d0ac484daeb078bcbb-us21
+//94798f4e558ed6393f17876080c98ed3-us21
 //list ID
 //a9dc1dc26f
-app.listen(process.env.PORT || 3000,function(){
+app.listen( 3000,function(){
     console.log("Server is currently running on port-3000");
 })
