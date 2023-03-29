@@ -31,7 +31,7 @@ app.post("/",function(req,res){
     const url = "https://us21.api.mailchimp.com/3.0/lists/a9dc1dc26f";
     const options = { 
         method:"POST",
-        auth:"sachin:04e5cbe3471f6b75e0b6992fcd10c4fc-us21",
+        auth:"sachin:688c8fc65bf6dff6dd201bb6ff82341a-us21",
     };
 
     const request = https.request(url,options,function(response){
@@ -51,7 +51,7 @@ app.post("/failure",function(req,res){
     res.redirect("/");
 })
 //API key
-//04e5cbe3471f6b75e0b6992fcd10c4fc-us21
+//688c8fc65bf6dff6dd201bb6ff82341a-us21
 //list ID
 //a9dc1dc26f
 app.listen( process.env.PORT || 3000,function(){
